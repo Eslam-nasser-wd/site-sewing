@@ -1,0 +1,173 @@
+// Custom screen
+@media (min-width: 992px)
+	.add
+		display: none
+
+// Big Size Screens
+@media (min-width: 1200px)
+	.add
+		display: block
+@media (min-width: 1200px) and (max-width: 1350px)
+	.single-post .write-comment .user-input
+		width: 87%
+
+
+@media (min-width: 992px) and (max-width: 1200px)
+	.popup
+		width: 70%
+
+
+// small Screens & tablets & Smart phone
+@media (max-width: 991px)
+	.add
+		display: none
+	.popup
+		width: 75%
+
+
+
+// Mobile & Tablets
+@media (max-width: 767px)
+	.index-warpper
+		flex-wrap: wrap-reverse
+	.index-warpper .right-warpper
+		width: 100%
+		margin-bottom: 20px
+	.container #cover_image .image-warpper .friends-images
+		display: none
+	.index-warpper, .index-warpper .left-warpper
+		width: 100%
+		margin-right: auto
+	.container #cover_image .image-warpper .cover-wrapper
+		width: 100%
+	.index-warpper
+		width: 100%
+	// Messages
+	.messages-list, .people-list
+		width: 100%
+	.current-chat
+		width: 96%
+		display: none
+	// Friends
+	.frind-list .frindes
+		width: 48%
+
+	.add-warpper
+		display: none
+	.popup
+		width: 95%
+	.image-popup
+		display: block
+		width: 95%
+		top: 10%
+		position: absolute
+	.image-popup .data .popup-details i.ion-android-close
+		font-size: 1.4em
+	.image-popup .image, .image-popup .data
+		float: none
+		width: 100%
+
+
+
+// Mobile
+@media (max-width: 480px)
+	.index-warpper
+		flex-wrap: wrap-reverse
+	.index-warpper .right-warpper
+		width: 100%
+		margin-bottom: 20px
+	.index-warpper, .index-warpper .left-warpper
+		width: 100%
+	.single-post .write-comment .user-input
+		width: 84%
+	.container #cover_image .image-warpper .cover-wrapper img
+		height: 100%
+	.container #cover_image .cover-top-nav a
+		padding: 15px 5px
+		width: 25%
+		margin: auto
+		text-align: center
+		li
+			font-size: .8em
+	.container #cover_image .cover-bottom-nav a
+		padding: 15px
+		width: 47%
+		text-align: center
+		margin: auto 1%
+	.timeline-nav .nav-item i.icon
+		display: block
+	.container #cover_image .image-warpper .cover-wrapper .choose-image-btn
+		padding: 10px
+	.container #cover_image .cover-top-nav
+		display: flex
+	.write-post .footer input[type="submit"]
+		padding: 10px 15px
+	.write-post .footer label[for="livePost"]
+		margin-top: 10px
+	// Friends
+	.frind-list .frindes
+		width: 98%
+	// Tabs
+	#single_chat_tap
+		display: none !important
+	// Nav
+	nav .left-side .search-bar .search-input.open-search
+		width: 75%
+	nav .top-level-menu li.profile-thumbnail, nav .top-level-menu li.notifications-li, nav .top-level-menu li.messages-li
+		display: none !important
+	.mobile-menu
+		display: block !important
+	.setting .setting-tap a
+		border-right: 1px solid #EEE
+	.setting .setting-tap li
+		span
+			display: block
+			font-size: 1.4em
+			margin-right: 10px
+	// Container fix
+	.container
+		max-width: 100%
+	// Mobile menu
+	.mobile-submenu
+		width: 100%
+		position: fixed
+		top: 53px
+		right: 0
+		left: 0
+		z-index: 97
+		background: #FFF
+		padding: 0
+		margin: 0
+		list-style-type: none
+		display: none
+		box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.16),0px 2px 5px 0px rgba(0,0,0,0.23)
+		&.open-submenu
+			display: block
+		a
+			color: #555
+			text-decoration: none
+			display: block
+			padding: 15px
+			border-bottom: 1px solid #eee
+			font-size: 1em
+			&:last-of-type
+				border-bottom: 0
+			img
+				width: 30px
+				border-radius: 100%
+				float: right
+				display: block
+				margin-top: -5px
+			i
+				float: right
+				margin-right: 8px
+				font-size: 1.3em
+			.counter
+				float: right
+	.timeline-nav .nav-item
+		width: 50%
+		border-bottom: 1px solid rgba(238, 238, 238, 0.4)
+	.single-post .write-comment .user-image
+		margin-right: 4%
+	.single-post .write-comment .user-input
+		width: 89%
