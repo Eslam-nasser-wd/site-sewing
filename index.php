@@ -53,20 +53,22 @@
         
         <?php for ($i=1; $i < 9; $i++) { ?> 
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="single-product">
-                <a href="#">
+            <a href="#">
+                <div class="single-product">
                     <div class="product-image"
                         style="background-image: url('assets/img/products/0<?php echo $i ?>.png')">
-                        <div class="price">100LE</div>    
+                        <!--<div class="price">100LE</div>    -->
                     </div>
-                </a>
-                <div class="product-name">
-                    <a href="#">Product Name</a>
-                </div>
-                <div class="description">Some description about the product</div>
-                <div class="category-name"><a href="#">Category name</a></div>
-                <a href="#" class="order-btn">Order</a>
-            </div><!--single-product-->  
+                    <div class="product-text">
+                        <div class="gradient"></div>
+                        <a href="#" class="add-to-cart">Add to cart &nbsp; <i class="icon ion-ios-cart"></i></a>
+                        <div class="product-name">Product Name</div>
+                        <div class="description">Some description about the product</div>
+                        <!--<div class="category-name"><a href="#">Category name</a></div>-->
+                        <!--<a href="#" class="order-btn">Order</a>-->
+                    </div><!--/product-text-->
+                </div><!--single-product-->  
+            </a>
         </div><!--/cols-->
         <?php } ?>
         
@@ -82,8 +84,9 @@
     </div><!--/devider-->
 
     <div class="grid">
-        <?php for ($i=1; $i < 11; $i++) { ?>
-            <div class="grid-item <?php if($i % 2 == 0) { echo 'grid-item--height2'; } ?>">
+        <?php echo rand(2,3); ?>
+        <?php for ($i=1; $i < 16; $i++) { ?>
+            <div class="grid-item <?php if($i % 2 == 0) { echo 'grid-item--height2'; } ?> <?php if($i % 3 == 0) { echo 'grid-item--height3'; } ?>">
                 <img src="https://unsplash.it/280/350/?random=<?php echo $i ?>" alt="">
                 <a href="https://unsplash.it/280/350/?random=<?php echo $i ?>" data-lightbox="image-1" data-title="My caption">
                     <div class="layer">
