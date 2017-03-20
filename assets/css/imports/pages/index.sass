@@ -227,3 +227,21 @@
 		height: 400px
 	.grid-item--height3
 		height: 450px
+	.show-all-gallery
+		display: flex
+		flex-direction: column
+		font-size: 30px
+		background: transparentize($color_light_gray, .8)
+		border: 1px solid transparentize($color_light_gray, .6)
+		&:hover
+			h4, i
+				color: $color_golden
+		h4, i
+			margin: auto
+			transition: .1s
+			color: #4d4d4d
+		h4
+			margin-top: 10px
+			font-weight: 100
+		i
+			margin-bottom: 0

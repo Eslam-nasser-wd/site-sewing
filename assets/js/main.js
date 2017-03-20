@@ -5,10 +5,9 @@ $('.grid').masonry({
     percentPosition: true,
 });
 
-// lightbox.option({
-//     'resizeDuration': 200,
-//     'wrapAround': true
-// })
+$('a[href="#"]').click(function (e) { 
+    e.preventDefault();
+ })
 
 
 

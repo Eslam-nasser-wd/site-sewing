@@ -76,7 +76,7 @@
 </section>
 <!--End Shop Samples-->
 
-<!--Start Gallery-->
+<!--Start Gallery--> 
 <section id="gallery">
     <div class="devider">
         <h4>Gallery</h4>
@@ -94,6 +94,12 @@
                     </div>
                 </a>
             </div>
+            <?php if($i == 15){ ?>
+                <div class="grid-item grid-item--height3 show-all-gallery">
+                    <i class="icon ion-ios-albums-outline"></i>
+                    <h4>Show all</h4>
+                </div>
+            <?php } ?>
         <?php } ?>
     </div>
 
